@@ -38,7 +38,8 @@ sed -i 's/\r//' README.md
 %install
 %make_install
 
-rm -f examples/{Makefile.cmake,example1_win64.sln,example1_win64.vcxproj,example1_win64.README.txt,lib_win64}
+rm -f examples/{Makefile.cmake,example1_win64.sln,example1_win64.vcxproj,example1_win64.README.txt}
+rm -rf examples/lib_win64
 
 %post
 /sbin/ldconfig
