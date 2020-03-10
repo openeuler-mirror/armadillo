@@ -1,6 +1,6 @@
 Name:           armadillo
 Version:        9.600.6
-Release:        2
+Release:        3
 Summary:        Fast C++ matrix library with syntax similar to MATLAB and Octave
 License:        ASL 2.0
 URL:            http://arma.sourceforge.net/
@@ -65,5 +65,8 @@ rm -rf examples/lib_win64
 %doc armadillo_joss_2016.pdf armadillo_mca_2019.pdf
 
 %changelog
+* Thu Mar 5 2020 wangye <wangye54@huawei.com> - 9.600.6-3
+- Update 
+
 * Thu Mar 5 2020 wangye <wangye54@huawei.com> - 9.600.6-2
 - Package init
