@@ -1,12 +1,12 @@
 Name:           armadillo
 Version:        9.600.6
-Release:        3
+Release:        4
 Summary:        Fast C++ matrix library with syntax similar to MATLAB and Octave
 License:        ASL 2.0
 URL:            http://arma.sourceforge.net/
 Source:         http://sourceforge.net/projects/arma/files/%{name}-%{version}.tar.xz
 
-BuildRequires:  cmake lapack-devel arpack-devel hdf5-devel openblas-devel SuperLU-devel atlas-devel
+BuildRequires:  cmake lapack-devel arpack-devel hdf5-devel openblas-devel SuperLU-devel
 
 
 %description
@@ -15,7 +15,7 @@ Armadillo is a C ++ linear algebra library and is an important choice.
 %package devel
 Summary:        Development headers and documentation for the Armadillo C++ library
 Requires:       %{name} = %{version}-%{release}
-Requires:       lapack-devel arpack-devel libstdc++-devel hdf5-devel openblas-devel SuperLU-devel atlas-devel
+Requires:       lapack-devel arpack-devel libstdc++-devel hdf5-devel openblas-devel SuperLU-devel
 
 %description devel
 This package contains header files.
@@ -65,6 +65,9 @@ rm -rf examples/lib_win64
 %doc armadillo_joss_2016.pdf armadillo_mca_2019.pdf
 
 %changelog
+* Fri 26 Mar 2021 sunguoshuai <sunguoshuai@huawei.com> - 9.600.6-4
+- Delete depends on atlas
+
 * Thu Mar 5 2020 wangye <wangye54@huawei.com> - 9.600.6-3
 - Update 
 
