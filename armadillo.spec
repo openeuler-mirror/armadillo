@@ -1,12 +1,12 @@
 Name:           armadillo
 Version:        9.600.6
-Release:        4
+Release:        5
 Summary:        Fast C++ matrix library with syntax similar to MATLAB and Octave
 License:        ASL 2.0
 URL:            http://arma.sourceforge.net/
 Source:         http://sourceforge.net/projects/arma/files/%{name}-%{version}.tar.xz
 
-BuildRequires:  cmake lapack-devel arpack-devel hdf5-devel openblas-devel SuperLU-devel
+BuildRequires:  cmake lapack-devel arpack-devel hdf5-devel openblas-devel SuperLU-devel gcc-g++
 
 
 %description
@@ -65,6 +65,9 @@ rm -rf examples/lib_win64
 %doc armadillo_joss_2016.pdf armadillo_mca_2019.pdf
 
 %changelog
+* Mon May 31 2021 baizhonggui <baizhonggui@huawei.com> - 9.600.6-5
+- Add gcc-g++ in BuildRequires
+
 * Fri 26 Mar 2021 sunguoshuai <sunguoshuai@huawei.com> - 9.600.6-4
 - Delete depends on atlas
 
