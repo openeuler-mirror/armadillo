@@ -1,6 +1,6 @@
 Name:           armadillo
-Version:        9.600.6
-Release:        5
+Version:        10.7.4
+Release:        1
 Summary:        Fast C++ matrix library with syntax similar to MATLAB and Octave
 License:        ASL 2.0
 URL:            http://arma.sourceforge.net/
@@ -48,7 +48,7 @@ rm -rf examples/lib_win64
 /sbin/ldconfig
 
 %files
-%{_libdir}/libarmadillo.so.9*
+%{_libdir}/libarmadillo.so.10*
 %license LICENSE.txt NOTICE.txt
 
 %files devel
@@ -62,9 +62,12 @@ rm -rf examples/lib_win64
 %doc README.md index.html docs.html mex_interface
 %doc examples armadillo_icon.png
 %doc armadillo_nicta_2010.pdf rcpp_armadillo_csda_2014.pdf
-%doc armadillo_joss_2016.pdf armadillo_mca_2019.pdf
+%doc armadillo_joss_2016.pdf 
 
 %changelog
+* Fri Jan 21 2022 SimpleUpdate Robot <tc@openeuler.org> - 10.7.4-1
+- Upgrade to version 10.7.4
+
 * Mon May 31 2021 baizhonggui <baizhonggui@huawei.com> - 9.600.6-5
 - Add gcc-g++ in BuildRequires
 
