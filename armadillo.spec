@@ -1,5 +1,5 @@
 Name:           armadillo
-Version:        10.8.2
+Version:        11.0.1
 Release:        1
 Summary:        Fast C++ matrix library with syntax similar to MATLAB and Octave
 License:        ASL 2.0
@@ -66,6 +66,9 @@ rm -rf examples/lib_win64
 %doc armadillo_lncs_2018.pdf armadillo_solver_2020.pdf 
 
 %changelog
+* Wed Apr 20 2022 YukariChiba <i@0x7f.cc> - 11.0.1-1
+- Upgrade version to 11.0.1
+
 * Wed Mar 30 2022 YukariChiba <i@0x7f.cc> - 10.8.2-1
 - Upgrade version to 10.8.2
 
